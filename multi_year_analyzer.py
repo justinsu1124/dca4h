@@ -91,8 +91,8 @@ class MultiYearAnalyzer:
         
         if optimization_method == 'grid':
             results_df = optimizer.grid_search(
-                x_range=(0.01, 0.10, 10),
-                y_range=(0.1, 1.0, 10), 
+                x_range=(0.02, 0.06, 10),
+                y_range=(0.3, 0.8, 10), 
                 base_amount_range=(500, 2000, 4)
             )
             
