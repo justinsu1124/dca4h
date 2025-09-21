@@ -4,32 +4,32 @@ DYNAMIC DCA STRATEGY PERFORMANCE REPORT
 
 STRATEGY PARAMETERS:
   Moving Average Period: 200
-  Deviation Threshold (x): 0.010 (1.0%)
-  Adjustment Factor (y): 0.800
-  Base Amount: $500.00
+  Deviation Threshold (x): 0.050 (5.0%)
+  Adjustment Factor (y): 0.400
+  Base Amount: $2000.00
 
 PERFORMANCE METRICS:
-  Total Return: 16.56%
-  Sharpe Ratio: 0.751
-  Maximum Drawdown: -8.86%
-  Volatility (Annualized): 7.24%
-  Final Portfolio Value: $11655.54
+  Total Return: 37.09%
+  Sharpe Ratio: 0.625
+  Maximum Drawdown: -17.71%
+  Volatility (Annualized): 14.47%
+  Final Portfolio Value: $13708.59
 
 BENCHMARK COMPARISON:
-  Buy & Hold Return: 32.49%
-  Excess Return: -15.94%
+  Buy & Hold Return: 9.27%
+  Excess Return: 27.81%
 
 TRADING STATISTICS:
-  Total Trades: 221
-  Buy Trades: 102
-  Sell Trades: 119
-  Average Buy Amount: $453.66
-  Average Sell Amount: $402.52
-  Trading Period: 2025-03-25 to 2025-09-21
+  Total Trades: 72
+  Buy Trades: 38
+  Sell Trades: 34
+  Average Buy Amount: $512.71
+  Average Sell Amount: $285.32
+  Trading Period: 2025-01-24 to 2025-09-21
 
 OPTIMIZATION SUMMARY:
   Total Combinations Tested: 256
-  Best Sharpe Ratio: 0.751
-  Worst Sharpe Ratio: 0.377
-  Average Sharpe Ratio: 0.555
+  Best Sharpe Ratio: 0.625
+  Worst Sharpe Ratio: 0.237
+  Average Sharpe Ratio: 0.506
 
