@@ -92,7 +92,7 @@ class OKXDataFetcher:
             return pd.DataFrame()
     
     def fetch_historical_data(self, inst_id: str = "BTC-USDT", bar: str = "4H", 
-                            days: int = 180) -> pd.DataFrame:
+                            days: int = 180, max_requests: int = 50) -> pd.DataFrame:
         """
         Fetch historical data for specified number of days
         
@@ -108,9 +108,10 @@ class OKXDataFetcher:
         
         candles_per_day = 24 // 4  # 6 candles per day for 4H
         total_candles_needed = days * candles_per_day
-        requests_needed = (total_candles_needed + 299) // 300  # Round up
+        requests_needed = min((total_candles_needed + 299) // 300, max_requests)  # Round up but limit
         
-        logger.info(f"Fetching {days} days of {bar} data for {inst_id} ({requests_needed} requests)")
+        logger.info(f"Fetching {days} days of {bar} data for {inst_id} ({requests_needed} requests, max {max_requests})")
+        logger.warning("Note: OKX API has historical data limitations - may only return recent ~240 days")
         
         after = None
         for i in range(requests_needed):
